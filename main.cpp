@@ -1,12 +1,12 @@
 #include <iostream>
-#include "Urzytkownik.h"
-
+#include "Menu.h"
 using namespace std;
 
 int main()
 {
-    Urzytkownik urztkownik("login", "haslo");
-    urztkownik.pokaz();
 
+    Menu menu = Menu();
+    menu.menuLogowanie();
+    menu.menuLogowanieWyborOpcji();
     return 0;
 }
